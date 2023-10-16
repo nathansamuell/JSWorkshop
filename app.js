@@ -1,4 +1,9 @@
-const btn = document.querySelector(button);
+const btn = document.querySelectorAll("button");
 
-btn.onclick(alert("hello"));
+btn[0].onclick = function(){
+    alert("hello");
+}
 
+btn[1].onclick = function(){
+    alert("hello2");
+}
