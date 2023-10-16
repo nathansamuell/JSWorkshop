@@ -1,9 +1,10 @@
-const btn = document.querySelectorAll("button");
+const btn = document.querySelector("#btn1");
+const btn2 = document.querySelector("#btn2")
 
-btn[0].onclick = function(){
+btn1.onclick = function(){
     alert("hello");
 }
 
-btn[1].onclick = function(){
+btn2.onclick = function(){
     alert("hello2");
 }
