@@ -31,6 +31,14 @@ function changeSign() {
     display(p);
 }
 
+function percent() {
+    var p = document.getElementById("result").innerHTML;
+    var q = Number(p);
+    q /= 100;
+    clearScreen();
+    display(q);
+}
+
 
 //TODO:old comments below
 
