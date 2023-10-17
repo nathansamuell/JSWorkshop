@@ -11,9 +11,51 @@
 </head>
 
 <body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh">
+        <div class="btn-holder" style="display: flex; flex-direction: column; width: 25vw">
+            <h1 id="result"></h1>
+            <div style="display: flex; justify-content: space-between;">
+                <button style="width: 25%" id="AC" class="btn btn-secondary" onclick="clearScreen()">AC</button>
+                <button style="width: 25%" id="+/-" class="btn btn-secondary" onclick="changeSign()">+/-</button>
+                <button style="width: 25%" id="%" class="btn btn-secondary">%</button>
+                <button style="width: 25%" id="/" class="btn btn-warning" onclick="display('/')">/</button>
+
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button style="width: 25%" id="7" class="btn btn-dark" onclick="display('7')">7</button>
+                <button style="width: 25%" id="8" class="btn btn-dark" onclick="display('8')">8</button>
+                <button style="width: 25%" id="9" class="btn btn-dark" onclick="display('9')">9</button>
+                <button style="width: 25%" id="*" class="btn btn-warning" onclick="display('*')">x</button>
+
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button style="width: 25%" id="4" class="btn btn-dark" onclick="display('4')">4</button>
+                <button style="width: 25%" id="5" class="btn btn-dark" onclick="display('5')">5</button>
+                <button style="width: 25%" id="6" class="btn btn-dark" onclick="display('6')">6</button>
+                <button style="width: 25%" id="-" class="btn btn-warning" onclick="display('-')">-</button>
+
+            </div>
+            
+            <div style="display: flex; justify-content: space-between;">
+                <button style="width: 25%" id="1" class="btn btn-dark" onclick="display('1')">1</button>
+                <button style="width: 25%" id="2" class="btn btn-dark" onclick="display('2')">2</button>
+                <button style="width: 25%" id="3" class="btn btn-dark" onclick="display('3')">3</button>
+                <button style="width: 25%" id="+" class="btn btn-warning" onclick="display('+')">+</button>
+
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button style="width: 50%" id="0" class="btn btn-dark" onclick="display('0')">0</button>
+                <button style="width: 25%" id="." class="btn btn-dark" onclick="display('.')">.</button>
+                <button style="width: 25%" id="=" class="btn btn-warning" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </div>
+
     
-    <button id="btn1" class="btn btn-primary">Click me</button>
-    <button id="btn2" class="btn btn-secondary">Click Me 2</button>
 
     <!-- <button onclick="alert('hello world')">Click me</button> -->
     <!-- <button onclick="alert('hello world')">Click me</button> -->
