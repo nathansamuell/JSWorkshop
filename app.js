@@ -5,9 +5,16 @@ function clearScreen() {
     document.getElementById("result").innerHTML = "";
 
 }
+function ac() {
+    document.getElementById("result").innerHTML = "0";
+}
 
-function display(calcResult) {
-    document.getElementById("result").innerHTML += calcResult;
+function display(value) {
+    var p = document.getElementById("result").innerHTML;
+    if (p == 0) {
+        clearScreen();
+    }
+    document.getElementById("result").innerHTML += value;
 }
 
 function calculate() {
